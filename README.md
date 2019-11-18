@@ -27,7 +27,7 @@ Once the compilation is complete, the following command runs the code for both t
 ```
 Here, n1 and n2 represent the discretization of the 2D square domain [0,1]x[0,1], h and tau represent step sizes of the G-Prox PDHG algorithm, and tolerance and max_iteration are specified for the iterations of the G-Prox PDHG algorithm.
 
-Here is an example you can use to run the program:
+Here is an example:
 ```
 	./main.exe 64 64 16 0.1 0.5 0.00001 1000
 ```
@@ -43,3 +43,17 @@ These may be plotted by typing the following command in a terminal, which will s
 ```
 	python plot.py
 ```
+
+Similarly, running the command line for the tropical Wasserstein-2 distance will produce the following two `.csv` files in the `Data` directory:
+* rho.csv
+* parameters.csv
+
+A video for these images may be created by typing the following command in a terminal, which will create and save a file named `video.mp4`
+
+## Relevant References
+*Tropical Optimal Transport and Wasserstein Distances in Phylogenetic Tree Space*
+Wonjun Lee, Wuchen Li, Bo Lin, and Anthea Monod
+[arxiv:1911.05401](https://arxiv.org/abs/1911.05401)
+
+## Contact
+We appreciate any questions or feedback you have on our code.  Please contact [Wonjun Lee](mailto:wlee@math.ucla.edu) or [Anthea Monod](mailto:antheam@tauex.tau.ac.il).
