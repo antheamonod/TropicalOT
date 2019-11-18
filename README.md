@@ -4,6 +4,8 @@ This repository provides code to implement the numerical experiments in [Lee et 
 
 Wasserstein distances are metrics on spaces of probability measures.  Intuitively, they measure the effort required to recover the probability mass of one distribution in terms of an efficient reconfiguration of another.  In terms of optimal transport, they yield the solution to the optimal transport problem when the cost function of moving a mass from one location to another is no more than the distance between the locations.  
 
+Our algorithm is primarily based on the G-Prox primal-dual hybrid gradient (G-Prox PDHG) algorithm, which is a modified of the Chambolle-Pock primal dual algorithms (2011).
+
 For more detail on the underlying theory of optimal transport and Wasserstein distances on the tropical projective torus, see [Lee et al.](https://arxiv.org/abs/1911.05401) and the references therein.
 
 This repository consists of two separate directories `Tropical_Wasserstein1` and `Tropical_Wasserstein2` consisting of C++ code to calculate the tropical Wasserstein-1 and 2 distances.
@@ -15,6 +17,7 @@ The following components are required to run the code in this repository:
 * fftw3 is a C subroutine to compute discrete Fourier transform, available at [fftw.org](http://www.fftw.org/)
 * python 3 is available at [python.org](https://www.python.org/downloads/) and is used to plot output (optional)
 
+### Compiling and Running the Code
 Open a terminal (command line prompt if using Windows) and type the following:
 ```
 g++ -O3 tropical_w1.cpp -o main.exe -lfftw3
