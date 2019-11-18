@@ -1,4 +1,4 @@
-# TropicalOT
+# TropicalOT: Tropical Optimal Transport and Wasserstein Distances in Phylogenetic Tree Space
 
 This repository provides code to implement the numerical experiments in [Lee et al.](https://arxiv.org/abs/1911.05401), which solves the optimal transport problem on the ambient space of phylogenetic trees (i.e., the tropical projective torus).  Specifically, the Wasserstein-1 and 2 distances are calculated, with the tropical metric as ground metric.
 
@@ -52,7 +52,9 @@ A video for these images may be created by typing the following command in a ter
 
 ## Relevant References
 *Tropical Optimal Transport and Wasserstein Distances in Phylogenetic Tree Space*
+
 Wonjun Lee, Wuchen Li, Bo Lin, and Anthea Monod
+
 [arxiv:1911.05401](https://arxiv.org/abs/1911.05401)
 
 ## Contact
